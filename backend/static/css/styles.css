@@ -1,49 +1,42 @@
-/* General body styling */
+
 body {
     font-family: 'Times New Roman', Times, serif; /* Sets the font family for the entire page */
     margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
+    padding: 0; 
     display: flex; /* Sets the body to use flexbox layout */
-    flex-direction: column; /* Arranges flex items (children) in a column */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
     background-color: #9daca7; /* Sets the background color of the page */
 }
 
 /* Header styling */
 header {
     font-family:'Bradley Hand';
-    background-color: #333; /* Sets the background color of the header */
-    color: #9daca7; /* Sets the text color */
-    padding: 1rem; /* Adds padding inside the header */
-    width: 100%; /* Sets the width of the header to 100% of its container */
-    text-align: center; /* Centers the text inside the header */
+    background-color: #333; 
+    color: #9daca7; 
+    padding: 1rem; 
+    width: 100%; 
+    text-align: center; 
 }
 
-/* Main section styling */
 main {
-    margin-top: 1rem; /* Adds a margin at the top of the main section */
-}
-
-/* List styling */
+    margin-top: 1rem; 
 ul {
-    list-style-type: none; /* Removes default list bullets */
-    padding: 0; /* Removes default padding */
+    list-style-type: none; 
+    padding: 0; 
 }
-
-/* List item styling */
 li {
-    background-color: #f3f7f6; /* Sets the background color of each list item */
-    border: 1px solid #ddd; /* Adds a border with a light gray color */
-    margin: 0.5rem 0; /* Adds a margin above and below each list item */
-    padding: 1rem; /* Adds padding inside each list item */
-    border-radius: 4px; /* Rounds the corners of the list items */
-    width: 300px; /* Sets the width of each list item */
-    text-align: center; /* Centers the text inside each list item */
+    background-color: #f3f7f6; 
+    border: 1px solid #ddd; 
+    margin: 0.5rem 0; 
+    padding: 1rem;
+    border-radius: 4px; 
+    width: 300px; 
+    text-align: center; 
 }
 
-/* Add button styling */
 .add-button {
     display: flex;
     align-items: center;
@@ -62,15 +55,15 @@ li {
     line-height: 1.5rem;
 }
 
-/* Remove button styling */
+
 .remove-button {
-    background-color: #9daca7; /* Sets the background color */
-    border: 1px solid #ddd; /* Adds a border with a light gray color */
-    margin: 0.5rem 0; /* Adds a margin above and below the button */
-    padding: 1rem; /* Adds padding inside the button */
-    border-radius: 4px; /* Rounds the corners of the button */
-    width: 200px; /* Sets the width of the button */
-    text-align: center; /* Centers the text inside the button */
+    background-color: #9daca7; 
+    border: 1px solid #ddd; 
+    margin: 0.5rem 0; 
+    padding: 1rem; 
+    border-radius: 4px;
+    width: 200px; 
+    text-align: center;
 }
 
 /* Add button hover effect */
