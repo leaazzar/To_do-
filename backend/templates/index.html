@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do</h1>
+        <ul>
+            {% for task in tasks %}
+            <li>
+                <span>{{ task[1] }} - {{ task[2] }}</span>
+                <form action="{{ url_for('remove_task') }}" method="POST" style="display:inline;">
+                    <input type="hidden" name="task_name" value="{{ task[1] }}">
+                    <button type="submit" class="remove-button">Remove</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('add_task') }}" class="add-button">+</a>
+    </div>
+</body>
+</html>
