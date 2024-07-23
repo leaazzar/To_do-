@@ -1,2 +1,8 @@
 create database todo_db;
 use todo_db; 
+
+create table tasks (
+id INT NOT NULL AUTO_INCREMENT,
+name_task VARCHAR(255),
+deadline date, 
+primary key (id));
